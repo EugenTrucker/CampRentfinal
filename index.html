@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<title>CampRent</title>
+	<link rel="icon" type="image/png" href="camping.jpg">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/fontello.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;800&display=swap" rel="stylesheet">
+</head>
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<img src="images/logoCr.png" style=" text-align: center;" height="200px;">
+			</div>
+				 
+					
+				
+			<div class="nav">
+				<ol><li><a href="#1">O NAS</li><li><a href="galeria.html">GALERIA</li><li><a href="wypozycz.html">WYPOZYCZ</li><li><a href="#4">CENNIK</li><li style="border-right: dotted;
+				"><a href="#5">KONTAKT</li></a></ol>
+			</div>
+			<div class="content">
+				<div class="about" id="1"><h1>CampRent</h1><p>To firma specjalizująca się w wnajmowaniu przyczep. Głównie przyczep kempingowych. Jesteśmy młodą firmą, która prężnie się rozwija.
+
+				<p></div>
+				<div class="pros" id="2">
+					<div class="prostxt">
+					<h2>Najwyższa Jakość</h2>
+					
+						Zanim nasz klient otrzyma swoją przyczepe, całosc jest dokładnie myta oraz dezynfekowana. Każda przyczepa przechodzi przeglad przed wyjazdem z naszej wypożyczalni. Na terenie kraju obowiązuje pomoc 24h/7 </div>
+					<div class="img">
+						<img src="images/frontPhoto1.jpg" height="500px" width="500px">
+					</div>
+					<div class="mustimg">
+						<img src="images/przyczepka.jpg" height="100%" width="100%"">
+					</div>
+
+					<div class="musttxt">
+						<h2>Co nas wyróznia</h2>
+						Niskie koszty wynajmu oraz najnizsze na rynku ceny kaucji sprawiaja, ze nasza oferta jest jedną z najkorzystniejszych na rynku.
+					</div>
+					<div class="prostxt">
+					<h2>CampRent Club</h2>
+						Członkostwo w klubie CampRent upoważnia do roznego rodzaju znizek. Od znizek na wynajem przyczep, po znizki na zaprzyjaznionych polach kempingowych oraz osrodkach. Karta ta upowaznia takze do prioretytowej kolejki jesli chodzi o termin wynajecia badz kupna przyczepy.
+					 </div>
+					<div class="prosimg">
+						<img src="images/frontPhoto2.jpg" height="500px" width="500px">
+					</div>
+				
+				</div>
+				
+
+								
+				
+				<div class="kontakt" id="5">Kontakt
+					<p style="font-size: 35px;">
+						CampRent <br>
+
+						tel: 666-666-666 <br>
+						<a href="mailto:CampRent@gmail.com">CampRent@gmail.com</a></br>
+						ul. Szeroka 42d Poznan
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript">	$(document).ready(function(){
+			var navY = $('.nav').offset().top;
+			
+			var stickyNav = function(){
+				var scrollY = $(window).scrollTop();
+				
+				if(scrollY > navY)
+				{
+					$('.nav').addClass('sticky');
+					$('.content').css('padding-top', '70px');
+				}
+				else
+				{
+					$('.nav').removeClass('sticky');
+					$('.content').css('padding-top', '10px');
+				}
+			};
+			
+			stickyNav();
+			
+			$(window).scroll(function(){
+				stickyNav();
+			});
+		});
+</script>
+<script type="text/javascript" src="slick.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top-150
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+	</body>
+</html>
