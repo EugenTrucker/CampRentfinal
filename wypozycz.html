@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<title>CampRent</title>
+	<link rel="icon" type="image/png" href="camping.jpg">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/fontello.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;800&display=swap" rel="stylesheet">
+</head>
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<a href="index.html"><img src="images/logoCr.png" style=" text-align: center;" height="200px;"></a>
+			</div>
+			<div class="nav">
+				<ol><li><a href="#1">KEMPINGOWE</li><li><a href="#2"+25px;>TRANSPORTOWE</li><li><a href="#3">SPECIALNE</li><li style="border-right: dotted;"><a href="index.html">STRONA GŁOWNA</li></a></ol>
+			</div>
+			<div class="content">
+				<div class="aboutWypozycz"><h1>Nasze Przyczepy</h1><p>
+				<p>
+					<br>
+					<br>
+					<div class="przyczepyKempingowe" id="1">
+						<h2>Przyczepy Kempingowe</h2>
+						<div class="przyczepaWypozycz">
+							<img src="images/przyczepka.jpg" height="500px" width="500px">
+							<p> <h5 style="margin-bottom: 0px;">HOBBY WU-59</h5>
+								<br> cena: 150zl za dobe</p>
+							<a href="wypozyczenie.html"><div class="buttonWypozyczam">Wypozyczam</div></a>
+						</div>
+						<br>
+						<div class="przyczepaWypozycz">
+							<img src="images/przyczepaKempingowa2.jpg" height="500px" width="500px">
+							<p> <h5 style="margin-bottom: 0px;">Niewiadow n126c</h5>
+								<br> cena: 100zl za dobe</p>
+							<a href="wypozyczenie.html"><div class="buttonWypozyczam">Wypozyczam</div></a>
+						</div>
+						<br>
+						<div class="przyczepaWypozycz">
+							<img src="images/przyczepaKempingowa3.jpg" height="500px" width="500px">
+							<p> <h5 style="margin-bottom: 0px;">Dathsleftt S550 </h5>
+								<br> cena: 250zl za dobe</p>
+							<a href="wypozyczenie.html"><div class="buttonWypozyczam">Wypozyczam</div></a>
+						</div>
+
+
+
+
+					</div>
+
+					<div class="przyczepyTransportowe" id="2">
+						<br>
+						<br>
+						<h2>Przyczepy Transportowe</h2>
+						<div class="przyczepaWypozycz">
+							<img src="images/przyczepaTransportowa.jpg" height="500px" width="500px">
+							<p> <h5 style="margin-bottom: 0px;">Niewiadow p150 (max udzwig: 750kg)</h5>
+								<br> cena: 50zl za dobe</p>
+							<a href="wypozyczenie.html"><div class="buttonWypozyczam">Wypozyczam</div></a>
+						</div>
+						<br>
+						<div class="przyczepaWypozycz">
+							<img src="images/przyczepaTransportowa1.jpg" height="500px" width="500px">
+							<p> <h5 style="margin-bottom: 0px;">Biedczan c137 (max udzwig: 600kg)</h5>
+								<br> Cena: 50zl za dobe</p>
+							<a href="wypozyczenie.html"><div class="buttonWypozyczam">Wypozyczam</div></a>
+						</div>	
+						<br>
+						<div class="przyczepaWypozycz">
+							<img src="images/przyczepaTransportowa3.jpg" height="500px" width="500px">
+							<p> <h5 style="margin-bottom: 0px;">Mazzo SW420 (max udzwig: 1200kg)</h5>
+								<br> cena: 50zl za dobe</p>
+							<a href="wypozyczenie.html"><div class="buttonWypozyczam">Wypozyczam</div></a>
+						</div>					
+					</div>
+					<br>
+					<br>
+
+
+					<div class="przyczepySpecialne" id="3">
+						<h2>Przyczepy Specialne</h2>
+						<div class="przyczepaWypozycz">
+							<img src="images/przyczepaSpecialna1.jpg" height="500px" width="500px">
+							<p> <h5 style="margin-bottom: 0px;">AM 530 (max udzwig: 1550kg)</h5>
+								<br> cena: 50zl za dobe</p>
+							<a href="wypozyczenie.html"><div class="buttonWypozyczam">Wypozyczam</div></a>
+						</div>
+						<br>
+						<div class="przyczepaWypozycz">
+							<img src="images/przyczepaSpecialna2.jpg" height="500px" width="500px">
+							<p> <h5 style="margin-bottom: 0px;">TEMARED MOTO 2 (max udzwig: 500kg)</h5>
+								<br> cena: 100zl za dobe</p>
+							<a href="wypozyczenie.html"><div class="buttonWypozyczam">Wypozyczam</div></a>
+						</div>
+					</div>
+				</div>
+
+
+				
+				
+								
+				
+
+			</div>
+		</div>
+
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript">	$(document).ready(function(){
+			var navY = $('.nav').offset().top;
+			
+			var stickyNav = function(){
+				var scrollY = $(window).scrollTop();
+				
+				if(scrollY > navY)
+				{
+					$('.nav').addClass('sticky');
+					$('.content').css('padding-top', '70px');
+				}
+				else
+				{
+					$('.nav').removeClass('sticky');
+					$('.content').css('padding-top', '10px');
+				}
+			};
+			
+			stickyNav();
+			
+			$(window).scroll(function(){
+				stickyNav();
+			});
+		});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top-150
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+	</body>
+</html>

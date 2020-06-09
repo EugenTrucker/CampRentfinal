@@ -1,0 +1,200 @@
+body
+{
+	background-color: white;
+	margin: 0 !important;
+}
+
+.wrapper{
+	width: 100%;
+	text-align: center;
+}
+.header{
+	width: 100%;
+	text-align: : center;
+
+}
+
+.logo{
+	height: 200px;
+	width: 1000px;
+	font-size: 70px;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin: auto;
+	
+
+}
+.nav{
+	width: 100%;
+	padding: 25px 0;
+	background-color: #1034A6;
+	text-align: center;
+	border-top: 5px lightblue;
+	border-bottom: 5px #0F52BA;
+	height: 50px;
+	color: #000000 !important;
+
+}
+.content{
+	background-color: white;
+	width: 1000px;
+	height: 4000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.sticky
+{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+.about
+{
+color: black;
+font-size: 40px;
+height: 350px;
+background-color: pink;
+}
+.aboutWypozycz
+{
+color: black;
+font-size: 40px;
+height: 4000px;
+background-color: pink;
+text-align: center;
+}
+.pros
+{
+	height: 500px;
+	font-size: 30px;
+	padding: 0 !important;
+	background-color: blue;
+}
+.prostxt
+{
+	width: 500px;
+	float: left;
+	height: 500px;
+	padding: 0 !important;
+}
+.mustimg
+{
+	float: left;
+	height: 500px;
+	padding: 0 !important;
+
+}
+.musttxt
+{	background-color: green;
+	height: 500px;
+	
+
+}
+.mustimg
+{
+	height: 500px;
+	width: 500px;
+}
+.costs
+{
+	height: 600px;
+	width: 100%;
+	display: inline-block;
+}
+.x
+{	border: 25px solid yellow;
+	font-size: 22px;
+	height: 150px;
+	width:200px;
+	float: left;
+	background-color: orange;
+	padding: 10px white;
+	display: block;
+}
+.koszty	
+{
+	height: 700px;
+	width: 1000px;
+	background-color: green;
+	font-size: 60px;
+}
+
+.squaremoney
+{
+	font-size: 20px;
+	float: left;
+height: 300px;
+width: 400px;
+background-color: grey;
+margin: 50px;
+margin-top: 100px;
+
+}
+.kontakt
+{
+	font-size: 60px;
+
+}
+
+
+ol
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-size: 25px;
+	height: 50px;
+	line-height: 200%;
+	display: inline-block;
+
+
+
+}
+ol a
+{
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+}
+ol > li
+{
+width: 180px;
+float: left;
+height: 50px;
+
+}
+
+ol > li:hover
+{
+	background-color: #2B2D2F;
+}
+
+*{
+	box-sizing: border-box;
+}
+img{
+	max-width: 100% !important;
+}
+.banner .slick-dots{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100;
+	z-index: 10;
+}
+.banner .slick-dots li{
+	list-style: none;
+	width: 15px;
+	height: 15px;
+	background: gray;
+	border-radius: 50%;
+	display: inline-block;
+
+}
+.banner .slick-dots li button{
+	display: none;	
+}
