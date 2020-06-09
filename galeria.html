@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<title>CampRent</title>
+	<link rel="icon" type="image/png" href="camping.jpg">
+	<link rel="stylesheet" type="text/css" href="css/styleGaleria.css">
+	<link rel="stylesheet" href="css/fontello.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;800&display=swap" rel="stylesheet">
+</head>
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<img src="images/logoCr.png" style=" text-align: center;" height="200px;">
+			</div>
+				
+			<div class="nav">
+				<ol><li><a href="#1">KEMPINGOWE</li><li><a href="#2">TRANSPORTOWE</li><li><a href="#3">SPECIALNE</li><li><a href="index.html">STRONA GŁÓWNA</li></a></ol>
+			</div>
+			<div>
+				<p></p>
+				<p></p>
+			</div>
+
+			<div class="banner_wrap">
+
+				<div class="banner">
+					
+  					<div><img src="images/przyczepka.jpg"></div>
+  					<div><img src="images/przyczepaSpecialna1.jpg"></div>
+  					<div><img src="images/przyczepaTransportowa.jpg"></div> 
+				</div>
+			</div>
+				
+				
+								
+				
+				
+
+			
+		</div>
+
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript">	$(document).ready(function(){
+			var navY = $('.nav').offset().top;
+			
+			var stickyNav = function(){
+				var scrollY = $(window).scrollTop();
+				
+				if(scrollY > navY)
+				{
+					$('.nav').addClass('sticky');
+					$('.content').css('padding-top', '70px');
+				}
+				else
+				{
+					$('.nav').removeClass('sticky');
+					$('.content').css('padding-top', '10px');
+				}
+			};
+			
+			stickyNav();
+			
+			$(window).scroll(function(){
+				stickyNav();
+			});
+		});
+</script>
+<script type="text/javascript" src="js/slick.js"></script>
+<script type="text/javascript">
+			$('.banner').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  
+
+});
+</script>
+	</body>
+</html>
